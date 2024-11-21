@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <div class="country-selector">
+            <label for="country">Select Country:</label>
+            <select id="country">
+                <option value="America/New_York">New York</option>
+                <option value="Europe/London">London</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <option value="Australia/Sydney">Sydney</option>
+                <option value="Asia/Kolkata">Mumbai</option>
+                <option value="Asia/Karachi">Pakistan</option>
+            </select>
+        </div>
+        <div class="clock-container" id="clockContainer">
+            <!-- Clock will be dynamically generated here -->
+            <div class="clock" id="clock">00:00:00</div>
+            <div class="clock-label" id="clockLabel">Select a country</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
